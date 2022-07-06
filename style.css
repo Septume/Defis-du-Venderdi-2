@@ -1,0 +1,77 @@
+.montre {
+    background-image:url(/image/watch_bleu.svg);
+    background-position: center;
+    width: 800px;
+    height: 1000px;
+
+}
+
+.aiguille1 {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    animation: rotation 5s infinite linear;
+    position: relative;
+    left: 25%;
+    top: 30%;
+    z-index: 0;
+}
+
+.aiguille1 .centre1 {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.aiguille1 .tige1 {
+    background-color: white;
+    width: 5px;
+    height: 175px;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.aiguille2 {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    transform-origin: centre;
+    animation: rotation 20s infinite linear;
+    position: absolute;
+    z-index: 1;
+    left: 208px;
+    top: 308px;
+} 
+
+ .aiguille2 .centre2 {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 10px;
+    border-color: red;
+
+} 
+
+ .aiguille2 .tige2 {
+    background-color: red;
+    width: 5px;
+    height: 100px;
+    margin-bottom: 75px;
+}
